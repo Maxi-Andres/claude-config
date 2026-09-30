@@ -10,6 +10,7 @@ Mi configuración de Claude Code, para tenerla igual en cualquier compu (Windows
 | `windows/statusline-command.ps1` | Statusline para Windows (PowerShell) |
 | `linux/statusline-command.sh` | El mismo statusline para Linux/macOS (bash + `jq`) |
 | `install.ps1` / `install.sh` | Instaladores |
+| `chrome/claude-counter/` | Extensión de Chrome con el uso en claude.ai |
 
 El statusline muestra dos líneas:
 
@@ -44,6 +45,15 @@ El instalador:
 4. Configura `statusLine` con la ruta correcta de esa máquina.
 
 Reiniciá Claude Code después de instalar.
+
+## Extensión de Chrome (Claude Counter)
+
+`chrome/claude-counter/` es la extensión que muestra tokens, timer de caché y las barras de uso (5h y semanal) en claude.ai. Chrome no deja instalar extensiones desempaquetadas por script, así que es a mano (una sola vez por compu):
+
+1. Abrí `chrome://extensions` y activá **Modo de desarrollador** (arriba a la derecha).
+2. **Cargar descomprimida** → elegí la carpeta `chrome/claude-counter` del repo.
+
+Como Chrome la carga desde esa carpeta, después de un `git pull` alcanza con tocar ↻ en la tarjeta de la extensión.
 
 ## Cambiar algo
 
